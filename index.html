@@ -8,37 +8,115 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Dotinstall App</title>
     <style>
-      
+      .cover {
+        background: url(img/bg.png);
+        background-size: cover;
+      }
     </style>
   </head>
   <body>
-    <!--
-    576px and up: sm
-    768px and up: md
-    992px and up: lg
-    1200px and up: xl
-    -->
-      <div class="container">
-        <div class="row">
-          <div class="col-10  bg-primary">1</div>
-          <div class="col-2  bg-secondary">2</div>
-        </div>
-        <!-- <div class="row">
-          <div class="col-10 col-md-2  bg-primary">1</div>
-          <div class="col-2  col-md-10bg-secondary">2</div>
-        </div> -->
-        <!-- <div class="row">
-          <div class="col-10   bg-primary">1</div>
-          <div class="col-2 d-md-none bg-secondary">2</div>
-        </div> -->
-        <div class="row">
-          <div class="col-10  bg-primary">1</div>
-          <div class="col-2 d-none d-md-block  bg-secondary">2</div>
-        </div>
-        
+    <header>
+      <div class="alert alert-info text-center mb-0 rounded-0 alert-dismissible fade show">
+        News! News! News! News! News! 
+        <button class="close" data-dismiss="alert">
+          &times;
+        </button>
       </div>
+      <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-light">
+          <a href="" class="navbar-brand">Logo</a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="menu" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="" class="nav-link">Link</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Link</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Link</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="cover text-white text-center py-5">
+        <h1>Dotinstall App</h1>
+        <a href="" class="btn btn-primary btn-lg">Get It Now!</a>
+      </div>
+    </header>
+    <main>
+        <section class="py-5">
+          <h2 class="text-center mb-5">Features</h2>
+          <div class="conteiner">
+            <div class="mb-5 row">
+              <div class="col-sm-8">
+                <h3>Awesome</h3>
+                <p>Helloo.HelloHelloo.HelloHelloo.HelloHelloo.HelloHelloo.Hello
+                  Helloo.HelloHelloo.HelloHelloo.Hello</p>
+              </div>
+              <div class="col-sm-4">
+                <img src="img/phone.png" class="w-100 rounded-circle">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8 order-sm-2">
+                <h3>Awesome</h3>
+                <p>Helloo.HelloHelloo.HelloHelloo.HelloHelloo.HelloHelloo.Hello
+                  Helloo.HelloHelloo.HelloHelloo.Hello</p>
+              </div>
+              <div class="col-sm-4 order-sm-1">
+                <img src="img/movie.png" class="w-100 rounded-circle">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-light text-center py-5">
+          <h2 class="mb-5">Plans</h2>
+          <div class="conteiner">
+            <table class="table table-hover">
+              <thead>
+                <tr><th>Plan A</th><th>Plan B</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>AA</td><td>BB</td></tr>
+                <tr><td>AAA</td><td>BBB</td></tr>
+                <tr><td>AAAA</td><td>BBBB</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="py-5">
+          <h2 class="mb-5 text-center">How to use</h2>
+          <dic class="container">
+            <ul class="nav nav-tabs">
+              <li class="nav-item"><a href="#ios" class="nav-link active" data-toggle="tab">ioS</a></li>
+              <li class="nav-item"><a href="#android" class="nav-link" data-toggle="tab">Android</a></li>
+            </ul>
+            <div class="tab-content py-4">
+              <div id="ios" class="tab-pane active">
+                <p>Hello ioS. Hello ioS.<span class="font-weight-bold text-info" data-toggle="tooltip" title="This is awesome" 
+                  data-placement="bottom">Hello ioS. Hello ioS.Hello ioS.</span>Hello ioS.Hello ioS. Hello ioS.Hello ioS. Hello ioS.Hello ioS. Hello ioS.
+                  Hello ioS. Hello ioS.Hello ioS. Hello ioS.Hello ioS. Hello ioS.</p>
+              </div>
+              <div id="android" class="tab-pane">
+                <p>Hello Android. Hello Android.Hello Android.Hello Android.Hello Android.Hello Android.Hello Android.Hello Android.Hello Android.
+                  Hello Android.Hello Android.Hello Android.Hello Android.Hello Android.</p>
+                </p>
+              </div>
+            </div>
+          </dic>
+        </section>
+
+        <section class="bg-light text-center py-5">
+          <a href="" class="btn btn-primary btn-lg">Get It Now!</a>
+        </section>
+    </main>
+    <footer class="text-center text-muted py-4">
+      Copyright YYYY dotinstall.com
+    </footer>
+    
      
     
     <!-- Optional JavaScript -->
@@ -46,5 +124,11 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+      $(function() {
+        'use strict';
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>
